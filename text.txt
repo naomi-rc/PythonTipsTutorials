@@ -1,0 +1,4 @@
+Counter allows us to count the occurrences 
+of a particular item. For instance it can 
+be used to count the number of individual 
+favourite colours:
