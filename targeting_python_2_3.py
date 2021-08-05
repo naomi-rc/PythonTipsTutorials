@@ -1,6 +1,6 @@
 # solutions to targeting python 2 and 3
 
-#   1) using future imports : from __future__ import function (i.e. )
+#   1) using future imports : from __future__ import function (i.e. print_function and with_statement)
 #   2) renaming modules by using import mapping: import x as y
 #       try:
 #           import python_3_module as module
