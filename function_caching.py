@@ -1,4 +1,5 @@
 # function caching : store function return value(s) to avoid re-executing costly calculations
+# Python 3.2+ can use lru_cache
 
 from functools import wraps, lru_cache
 import time
@@ -20,7 +21,7 @@ def cache_job(function):
 start_time = time.time()
 
 @cache_job
-#@lru_cache
+#@lru_cache # Run execute_job.cache_clear() to empty cache
 def execute_job(calculation):
     result = eval(calculation)
     time.sleep(result)    
